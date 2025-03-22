@@ -1,0 +1,8 @@
+version: ''
+
+services:
+  kane_web:
+    build: .
+    ports:
+      - "8000:8000"
+    container_name: kane_erver
