@@ -5,6 +5,10 @@ on:
     branches:
       - main  # Déclenche le pipeline à chaque push sur la branche principale
 
+  pull_request:
+    branches:
+      - main  # Déclenche aussi le pipeline lors d'une pull request sur main
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
